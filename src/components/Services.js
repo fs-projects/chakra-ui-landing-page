@@ -21,7 +21,7 @@ import { GiDeerTrack } from 'react-icons/gi';
 import { Box } from '@chakra-ui/react';
 function Services() {
   return (
-    <Box as="section" marginBottom="90px">
+    <Box as="section" marginBottom="200px">
       <Box>
         <Flex marginBottom="40px" justifyContent="center">
           <Heading as="h2" size="2xl">

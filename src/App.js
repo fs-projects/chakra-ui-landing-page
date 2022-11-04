@@ -11,15 +11,17 @@ import Articles from './components/Articles';
 import Footer from './components/Footer';
 export default function App() {
   return (
-    <Box my="60px" mx="150px">
-      <Navigation />
-      <CtaSection />
-      <Services />
-      <Provider />
-      <Downloads />
-      {/* <CustomerTestimonals /> */}
-      <Articles />
+    <>
+      <Box my="60px" mx="150px">
+        <Navigation />
+        <CtaSection />
+        <Services />
+        <Provider />
+        <Downloads />
+        {/* <CustomerTestimonals /> */}
+        <Articles />
+      </Box>
       <Footer />
-    </Box>
+    </>
   );
 }
