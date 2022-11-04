@@ -7,6 +7,7 @@ import {
   Grid,
   GridItem,
   Button,
+  Flex,
 } from '@chakra-ui/react';
 import styles from './Services.module.css';
 import { Icon } from '@chakra-ui/react';
@@ -20,13 +21,13 @@ import { GiDeerTrack } from 'react-icons/gi';
 import { Box } from '@chakra-ui/react';
 function Services() {
   return (
-    <Box as="section">
+    <Box as="section" marginBottom="90px">
       <Box>
-        <Container marginBottom="40px">
+        <Flex marginBottom="40px" justifyContent="center">
           <Heading as="h2" size="2xl">
             Our Services
           </Heading>
-        </Container>
+        </Flex>
         <div className={styles.horizontalLine}></div>
         <Container maxW="6xl">
           <Text textAlign="center" fontWeight="light" fontSize="md">

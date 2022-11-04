@@ -5,7 +5,7 @@ function CtaSection() {
   return (
     <Box
       as="section"
-      marginBottom="90px"
+      marginBottom="200px"
       display="flex"
       alignItems="center"
       justifyContent="space-between"

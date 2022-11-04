@@ -17,7 +17,7 @@ export default function App() {
       <Services />
       <Provider />
       <Downloads />
-      <CustomerTestimonals />
+      {/* <CustomerTestimonals /> */}
       <Articles />
       <Footer />
     </Box>
