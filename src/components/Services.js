@@ -12,12 +12,7 @@ import {
 } from '@chakra-ui/react';
 import styles from './Services.module.css';
 import { Icon } from '@chakra-ui/react';
-import { FcSearch } from 'react-icons/fc';
-import { MdLocalPharmacy } from 'react-icons/md';
-import { FaSketch } from 'react-icons/fa';
-import { GrEmergency } from 'react-icons/gr';
-import { FcViewDetails } from 'react-icons/fc';
-import { GiDeerTrack } from 'react-icons/gi';
+import { data } from '../data';
 
 import { Box } from '@chakra-ui/react';
 function Services() {
@@ -29,9 +24,15 @@ function Services() {
     '2xl': 'doublextralarge',
   });
   return (
-    <Box as="section" marginBottom="200px">
-      <Box>
-        <Flex marginBottom="40px" justifyContent="center">
+    <Box
+      as="section"
+      marginBottom={['100px', '150px', '200px', '200px', '200px']}
+    >
+      <Box marginBottom={['20px', '25px', '40px', '45px', '45px']}>
+        <Flex
+          marginBottom={['20px', '25px', '40px', '45px', '45px']}
+          justifyContent="center"
+        >
           <Heading as="h2" size={['sm', 'md', 'xl', '2xl', '2xl']}>
             Our Services
           </Heading>
@@ -41,7 +42,7 @@ function Services() {
           <Text
             textAlign="center"
             fontWeight="light"
-            fontSize={['sm', 'md', 'xl', '2xl', '2xl']}
+            fontSize={['sm', 'md', 'md', 'md', 'md']}
           >
             We provide to you the best choiches for you. Adjust it to your
             health needs and make sure your undergo treatment with our highly
@@ -61,271 +62,60 @@ function Services() {
           rowGap={['2', '1', '3', '3', '3']}
           p={['10px', '15px', '50px', '50px', '50px']}
         >
-          <GridItem
-            w="100%"
-            pl={['15px', '20px', '40px', '40px', '40px']}
-            py={['10px', '20px', '45px', '45x', '45x']}
-            pr={['10px', '20px', '45px', '45x', '45x']}
-            borderRadius="20px"
-            background="#F9F7F7"
-          >
-            <Flex
-              alignItems="center"
-              flexDirection={['row', 'column', 'column', 'column', 'column']}
-              justifyContent="space-between"
-            >
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['block', 'none', 'none', 'none', 'none']}
-              >
-                Search Doctor
-              </Heading>
-              <Icon
-                as={FcSearch}
-                width={['20px', '30px', '90px', '90px', '90px']}
-                height={['20px', '30px', '90px', '90px', '90px']}
-                marginBottom="20px"
-              />
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['none', 'block', 'block', 'block', 'block']}
-              >
-                Search Doctor
-              </Heading>
-            </Flex>
-            <Text
-              fontWeight="light"
-              fontSize={['sm', 'md', 'xl', '2xl', '2xl']}
-            >
-              Choose your doctor from thousands of specialist, general, and
-              trusted hospitals
-            </Text>
-          </GridItem>
-
-          <GridItem
-            w="100%"
-            pl={['15px', '20px', '40px', '40px', '40px']}
-            py={['10px', '20px', '45px', '45x', '45x']}
-            pr={['10px', '20px', '45px', '45x', '45x']}
-            borderRadius="20px"
-            background="#F9F7F7"
-          >
-            <Flex
-              alignItems="center"
-              flexDirection={['row', 'column', 'column', 'column', 'column']}
-              justifyContent="space-between"
-            >
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['block', 'none', 'none', 'none', 'none']}
-              >
-                Search Doctor
-              </Heading>
-              <Icon
-                as={MdLocalPharmacy}
-                width={['20px', '30px', '90px', '90px', '90px']}
-                height={['20px', '30px', '90px', '90px', '90px']}
-                marginBottom="20px"
-              />
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['none', 'block', 'block', 'block', 'block']}
-              >
-                Search Doctor
-              </Heading>
-            </Flex>
-            <Text
-              fontWeight="light"
-              fontSize={['sm', 'md', 'xl', '2xl', '2xl']}
-            >
-              Choose your doctor from thousands of specialist, general, and
-              trusted hospitals
-            </Text>
-          </GridItem>
-          <GridItem
-            w="100%"
-            pl={['15px', '20px', '40px', '40px', '40px']}
-            py={['10px', '20px', '45px', '45x', '45x']}
-            pr={['10px', '20px', '45px', '45x', '45x']}
-            borderRadius="20px"
-            background="#F9F7F7"
-          >
-            <Flex
-              alignItems="center"
-              flexDirection={['row', 'column', 'column', 'column', 'column']}
-              justifyContent="space-between"
-            >
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['block', 'none', 'none', 'none', 'none']}
-              >
-                Search Doctor
-              </Heading>
-              <Icon
-                as={FaSketch}
-                width={['20px', '30px', '90px', '90px', '90px']}
-                height={['20px', '30px', '90px', '90px', '90px']}
-                marginBottom="20px"
-              />
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['none', 'block', 'block', 'block', 'block']}
-              >
-                Search Doctor
-              </Heading>
-            </Flex>
-            <Text
-              fontWeight="light"
-              fontSize={['sm', 'md', 'xl', '2xl', '2xl']}
-            >
-              Choose your doctor from thousands of specialist, general, and
-              trusted hospitals
-            </Text>
-          </GridItem>
-          <GridItem
-            w="100%"
-            pl={['15px', '20px', '40px', '40px', '40px']}
-            py={['10px', '20px', '45px', '45x', '45x']}
-            pr={['10px', '20px', '45px', '45x', '45x']}
-            borderRadius="20px"
-            background="#F9F7F7"
-          >
-            <Flex
-              alignItems="center"
-              flexDirection={['row', 'column', 'column', 'column', 'column']}
-              justifyContent="space-between"
-            >
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['block', 'none', 'none', 'none', 'none']}
-              >
-                Search Doctor
-              </Heading>
-              <Icon
-                as={GrEmergency}
-                width={['20px', '30px', '90px', '90px', '90px']}
-                height={['20px', '30px', '90px', '90px', '90px']}
-                marginBottom="20px"
-              />
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['none', 'block', 'block', 'block', 'block']}
-              >
-                Search Doctor
-              </Heading>
-            </Flex>
-            <Text
-              fontWeight="light"
-              fontSize={['sm', 'md', 'xl', '2xl', '2xl']}
-            >
-              Choose your doctor from thousands of specialist, general, and
-              trusted hospitals
-            </Text>
-          </GridItem>
-          <GridItem
-            w="100%"
-            pl={['15px', '20px', '40px', '40px', '40px']}
-            py={['10px', '20px', '45px', '45x', '45x']}
-            pr={['10px', '20px', '45px', '45x', '45x']}
-            borderRadius="20px"
-            background="#F9F7F7"
-          >
-            <Flex
-              alignItems="center"
-              flexDirection={['row', 'column', 'column', 'column', 'column']}
-              justifyContent="space-between"
-            >
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['block', 'none', 'none', 'none', 'none']}
-              >
-                Search Doctor
-              </Heading>
-              <Icon
-                as={FcViewDetails}
-                width={['20px', '30px', '90px', '90px', '90px']}
-                height={['20px', '30px', '90px', '90px', '90px']}
-                marginBottom="20px"
-              />
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['none', 'block', 'block', 'block', 'block']}
-              >
-                Search Doctor
-              </Heading>
-            </Flex>
-            <Text
-              fontWeight="light"
-              fontSize={['sm', 'md', 'xl', '2xl', '2xl']}
-            >
-              Choose your doctor from thousands of specialist, general, and
-              trusted hospitals
-            </Text>
-          </GridItem>
-          <GridItem
-            w="100%"
-            pl={['15px', '20px', '40px', '40px', '40px']}
-            py={['10px', '20px', '45px', '45x', '45x']}
-            pr={['10px', '20px', '45px', '45x', '45x']}
-            borderRadius="20px"
-            background="#F9F7F7"
-          >
-            <Flex
-              alignItems="center"
-              flexDirection={['row', 'column', 'column', 'column', 'column']}
-              justifyContent="space-between"
-            >
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['block', 'none', 'none', 'none', 'none']}
-              >
-                Search Doctor
-              </Heading>
-              <Icon
-                as={GiDeerTrack}
-                width={['20px', '30px', '90px', '90px', '90px']}
-                height={['20px', '30px', '90px', '90px', '90px']}
-                marginBottom="20px"
-              />
-              <Heading
-                as="h5"
-                size={['sm', 'md', 'xl', '2xl', '2xl']}
-                marginBottom="15px"
-                display={['none', 'block', 'block', 'block', 'block']}
-              >
-                Search Doctor
-              </Heading>
-            </Flex>
-            <Text
-              fontWeight="light"
-              fontSize={['sm', 'md', 'xl', '2xl', '2xl']}
-            >
-              Choose your doctor from thousands of specialist, general, and
-              trusted hospitals
-            </Text>
-          </GridItem>
+          {data &&
+            data.map((el, i) => {
+              return (
+                <GridItem
+                  w="100%"
+                  pl={['15px', '20px', '40px', '40px', '40px']}
+                  py={['10px', '20px', '45px', '45x', '45x']}
+                  pr={['10px', '20px', '45px', '45x', '45x']}
+                  borderRadius="20px"
+                  background="#F9F7F7"
+                >
+                  <Flex
+                    alignItems="center"
+                    flexDirection={[
+                      'row',
+                      'column',
+                      'column',
+                      'column',
+                      'column',
+                    ]}
+                    justifyContent="space-between"
+                  >
+                    <Heading
+                      as="h5"
+                      size={['sm', 'sm', 'sm', 'sm', 'sm']}
+                      marginBottom="15px"
+                      display={['block', 'none', 'none', 'none', 'none']}
+                    >
+                      {el.heading}
+                    </Heading>
+                    <Icon
+                      as={el.icon}
+                      width={['20px', '30px', '90px', '90px', '90px']}
+                      height={['20px', '30px', '90px', '90px', '90px']}
+                      marginBottom="20px"
+                    />
+                    <Heading
+                      as="h5"
+                      size={['sm', 'md', 'md', 'md', 'md']}
+                      marginBottom="15px"
+                      display={['none', 'block', 'block', 'block', 'block']}
+                    >
+                      {el.heading}
+                    </Heading>
+                  </Flex>
+                  <Text
+                    fontWeight="light"
+                    fontSize={['sm', 'md', 'md', 'md', 'md']}
+                  >
+                    {el.text}
+                  </Text>
+                </GridItem>
+              );
+            })}
         </Grid>
       </Box>
       <Box display="flex" justifyContent="center">

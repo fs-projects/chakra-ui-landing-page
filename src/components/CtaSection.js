@@ -47,12 +47,12 @@ function CtaSection() {
               />
             </Box>
           )}
-          <Text fontWeight="light" fontSize={['sm', 'md', 'xl', '2xl', '2xl']}>
+          <Text fontWeight="light" fontSize={['sm', 'md', 'md', 'md', 'md']}>
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone
           </Text>
         </Box>
-        <Flex justifyContent="center">
+        <Flex justifyContent={['center', 'start', 'start', 'start', 'start']}>
           <Button
             colorScheme="teal"
             size={['sm', 'md', 'lg', 'lg', 'lg']}

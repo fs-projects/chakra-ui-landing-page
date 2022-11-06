@@ -1,7 +1,21 @@
 import React from 'react';
 
-import { Box, Heading, Button, Image, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Heading,
+  Button,
+  Image,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 function Providers() {
+  const breakpoint = useBreakpointValue({
+    base: 'base',
+    sm: 'small',
+    lg: 'large',
+    xl: 'xtralarge',
+    '2xl': 'doublextralarge',
+  });
   return (
     <Box
       as="section"
@@ -19,14 +33,16 @@ function Providers() {
       </Box>
       <Box width="40%">
         <Box marginBottom="40px">
-        <Heading as="h2" size="2xl" marginBottom="25px">
-          Leading healthcare providers
-        </Heading>
-        <Text fontWeight="light" fontSize="md">
-          Trafalgar provides progressive, and affordable healthcare, accessible
-          on mobile and online for everyone. To us, it’s not just work. We take
-          pride in the solutions we deliver
-        </Text>
+          {breakpoint !== 'base' && (
+            <Heading as="h2" size="2xl" marginBottom="25px">
+              Leading healthcare providers
+            </Heading>
+          )}
+          <Text fontWeight="light" fontSize="md">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone. To us, it’s not just
+            work. We take pride in the solutions we deliver
+          </Text>
         </Box>
         <Button
           colorScheme="teal"
