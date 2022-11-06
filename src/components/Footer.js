@@ -110,8 +110,6 @@ function Footer() {
             </Link>
           </Flex>
         </GridItem>
-        <GridItem></GridItem>
-        <GridItem></GridItem>
       </Grid>
     </Box>
   );
