@@ -32,6 +32,7 @@ function CtaSection() {
             as="h2"
             size={['sm', 'md', 'xl', '2xl', '2xl']}
             marginBottom={['20px', '25px', '40px', '40px', '40px']}
+            fontFamily="body"
           >
             Virtual Healthcare for you
           </Heading>

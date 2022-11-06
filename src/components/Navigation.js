@@ -98,7 +98,9 @@ function Navigation() {
             height="25px"
             src="https://images.unsplash.com/photo-1667379586896-ce8d7844eb0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
           />
-          <Box as="span">Trafalgar</Box>
+          <Box as="span" fontWeight="semibold">
+            Trafalgar
+          </Box>
         </Box>
         <Box
           display="flex"

@@ -33,7 +33,11 @@ function Services() {
           marginBottom={['20px', '25px', '40px', '45px', '45px']}
           justifyContent="center"
         >
-          <Heading as="h2" size={['sm', 'md', 'xl', '2xl', '2xl']}>
+          <Heading
+            as="h2"
+            size={['sm', 'md', 'xl', '2xl', '2xl']}
+            fontFamily="body"
+          >
             Our Services
           </Heading>
         </Flex>
@@ -89,6 +93,7 @@ function Services() {
                       size={['sm', 'sm', 'sm', 'sm', 'sm']}
                       marginBottom="15px"
                       display={['block', 'none', 'none', 'none', 'none']}
+                      fontFamily="body"
                     >
                       {el.heading}
                     </Heading>
@@ -103,6 +108,7 @@ function Services() {
                       size={['sm', 'md', 'md', 'md', 'md']}
                       marginBottom="15px"
                       display={['none', 'block', 'block', 'block', 'block']}
+                      fontFamily="body"
                     >
                       {el.heading}
                     </Heading>
