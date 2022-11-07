@@ -58,13 +58,29 @@ function Downloads() {
           </Button>
         </Box>
       </Box>
-      <Box width={['100%', '55%', '55%', '55%', '55%']}>
+      <Box
+        width={['100%', '55%', '55%', '55%', '55%']}
+        display={['none', 'block', 'block', 'block', 'block']}
+      >
         <Image
           src="https://images.unsplash.com/photo-1507297230445-ff678f10b524?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJuZXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
           borderRadius="10px"
           width="100%"
         />
       </Box>
+      {breakpoint === 'base' && (
+        <Box display="flex" alignItems="center">
+          <Button
+            colorScheme="teal"
+            size={['sm', 'md', 'lg', 'lg', 'lg']}
+            borderRadius="55px"
+            variant="outline"
+          >
+            Download
+            <Icon as={HiDownload} marginLeft="3px" />
+          </Button>
+        </Box>
+      )}
     </Box>
   );
 }

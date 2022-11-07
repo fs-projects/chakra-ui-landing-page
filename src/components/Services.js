@@ -35,7 +35,7 @@ function Services() {
         >
           <Heading
             as="h2"
-            size={['sm', 'md', 'xl', '2xl', '2xl']}
+            size={['md', 'md', 'xl', '2xl', '2xl']}
             fontFamily="body"
           >
             Our Services

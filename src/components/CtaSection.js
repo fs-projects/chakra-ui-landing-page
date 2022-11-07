@@ -28,14 +28,25 @@ function CtaSection() {
     >
       <Box width={['100%', '40%', '40%', '40%', '40%']}>
         <Box marginBottom={['20px', '25px', '40px', '45px', '45px']}>
-          <Heading
-            as="h2"
-            size={['sm', 'md', 'xl', '2xl', '2xl']}
-            marginBottom={['20px', '25px', '40px', '40px', '40px']}
-            fontFamily="body"
+          <Box
+            display="flex"
+            justifyContent={[
+              'center',
+              'flex-start',
+              'flex-start',
+              'flex-start',
+              'flex-start',
+            ]}
           >
-            Virtual Healthcare for you
-          </Heading>
+            <Heading
+              as="h2"
+              size={['md', 'md', 'xl', '2xl', '2xl']}
+              marginBottom={['20px', '25px', '40px', '40px', '40px']}
+              fontFamily="body"
+            >
+              Virtual Healthcare for you
+            </Heading>
+          </Box>
           {breakpoint === 'base' && (
             <Box
               width={['100%', '55%', '55%', '55%', '55%']}

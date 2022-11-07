@@ -27,12 +27,7 @@ function Providers() {
       justifyContent="space-between"
     >
       {breakpoint === 'base' && (
-        <Heading
-          as="h2"
-          size="md"
-          marginBottom="25px"
-          fontFamily="body"
-        >
+        <Heading as="h2" size="md" marginBottom="25px" fontFamily="body">
           Leading healthcare providers
         </Heading>
       )}
@@ -57,14 +52,25 @@ function Providers() {
             work. We take pride in the solutions we deliver
           </Text>
         </Box>
-        <Button
-          colorScheme="teal"
-          size={['sm', 'md', 'lg', 'lg', 'lg']}
-          borderRadius="55px"
-          variant="outline"
+        <Box
+          display="flex"
+          justifyContent={[
+            'center',
+            'flex-start',
+            'flex-start',
+            'flex-start',
+            'flex-start',
+          ]}
         >
-          Learn More
-        </Button>
+          <Button
+            colorScheme="teal"
+            size={['sm', 'md', 'lg', 'lg', 'lg']}
+            borderRadius="55px"
+            variant="outline"
+          >
+            Learn More
+          </Button>
+        </Box>
       </Box>
     </Box>
   );
