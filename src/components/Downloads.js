@@ -29,24 +29,37 @@ function Downloads() {
       justifyContent="space-between"
     >
       {breakpoint === 'base' && (
-        <Heading as="h2" size="md" marginBottom="25px" fontFamily="body">
-          Download our mobile apps
-        </Heading>
+        <>
+          <Heading as="h2" size="md" marginBottom="25px" fontFamily="body">
+            Download our mobile apps
+          </Heading>
+          <Box width="100%" marginBottom="25px">
+            <Image
+              src="https://images.unsplash.com/photo-1507297230445-ff678f10b524?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJuZXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              borderRadius="10px"
+              width="100%"
+            />
+          </Box>
+        </>
       )}
       <Box width={['100%', '40%', '40%', '40%', '40%']}>
-        <Box marginBottom="40px">
+        <Box marginBottom={['20px', '30px', '40px', '40px', '40px']}>
           {breakpoint !== 'base' && (
             <Heading as="h2" size="2xl" marginBottom="25px" fontFamily="body">
               Download our mobile apps
             </Heading>
           )}
-          <Text fontWeight="light" fontSize="md">
+          <Text fontWeight="light" fontSize={['sm', 'md', 'md', 'md', 'md']}>
             Our dedicated patient engagement app and web portal allow you to
             access information instantaneously (no tedeous form, long calls, or
             administrative hassle) and securely
           </Text>
         </Box>
-        <Box display="flex" alignItems="center">
+        <Box
+          display="flex"
+          alignItems="center"
+          display={['none', 'block', 'block', 'block', 'block']}
+        >
           <Button
             colorScheme="teal"
             size={['sm', 'md', 'lg', 'lg', 'lg']}
@@ -60,6 +73,7 @@ function Downloads() {
       </Box>
       <Box
         width={['100%', '55%', '55%', '55%', '55%']}
+        marginBottom={['10px', '0px', '0px', '0px', '0px', '0px']}
         display={['none', 'block', 'block', 'block', 'block']}
       >
         <Image
