@@ -54,7 +54,7 @@ function CtaSection() {
             >
               <Image
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZmaWNlJTIwbWVldGluZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                borderRadius="10px"
+                borderRadius={['10px', '15px', '20px', '20px', '20px']}
                 width="100%"
               />
             </Box>
@@ -68,7 +68,7 @@ function CtaSection() {
           <Button
             colorScheme="teal"
             size={['sm', 'md', 'lg', 'lg', 'lg']}
-            borderRadius="55px"
+            borderRadius={['35px', '40px', '55px', '55px', '55px']}
           >
             Consult Today
           </Button>
@@ -78,7 +78,7 @@ function CtaSection() {
         <Box width={['100%', '55%', '55%', '55%', '55%']}>
           <Image
             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZmaWNlJTIwbWVldGluZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-            borderRadius="10px"
+            borderRadius={['10px', '15px', '20px', '20px', '20px']}
             width="100%"
           />
         </Box>

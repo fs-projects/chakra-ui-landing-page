@@ -34,7 +34,7 @@ function Providers() {
       <Box width={['100%', '55%', '55%', '55%', '55%']}>
         <Image
           src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhlYWx0aGNhcmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-          borderRadius="10px"
+          borderRadius={['10px', '15px', '20px', '20px', '20px']}
           width="100%"
           marginBottom={['20px', '0px', '0px', '0px', '0px']}
         />
@@ -65,7 +65,7 @@ function Providers() {
           <Button
             colorScheme="teal"
             size={['sm', 'md', 'lg', 'lg', 'lg']}
-            borderRadius="55px"
+            borderRadius={['35px', '40px', '55px', '55px', '55px']}
             variant="outline"
           >
             Learn More

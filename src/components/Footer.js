@@ -10,106 +10,84 @@ import {
   Image,
   Link,
 } from '@chakra-ui/react';
+import { footer } from '../data';
 function Footer() {
   return (
     <Box background="#F9F7F7" p="50px">
-      <Grid templateColumns="repeat(4, 1fr)">
+      <Grid
+        templateColumns={[
+          'repeat(1, 1fr)',
+          'repeat(2, 1fr)',
+          'repeat(3, 1fr)',
+          'repeat(4, 1fr)',
+          'repeat(4, 1fr)',
+        ]}
+        columnGap={['0', '1', '1', '1', '1']}
+        rowGap={['2', '2', '2', '2', '2']}
+      >
         <GridItem>
-          <Box
-            display="flex"
-            alignItems="center"
-            columnGap="10px"
-            marginBottom="20px"
-          >
+          <Box display="flex" alignItems="center" marginBottom="20px">
             <Image
               width="25px"
               height="25px"
               src="https://images.unsplash.com/photo-1667379586896-ce8d7844eb0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+              marginRight="5px"
             />
-            <Box as="span" fontWeight="bold">
+            <Box
+              as="span"
+              fontWeight="bold"
+              fontSize={['sm', 'md', 'md', 'md', 'md']}
+            >
               Trafalgar
             </Box>
           </Box>
-          <Text fontWeight="light" fontSize="sm" marginBottom="30px">
+          <Text
+            fontWeight="light"
+            fontSize={['sm', 'md', 'md', 'md', 'md']}
+            marginBottom={['5px', '8px', '30px', '30px', '30px']}
+          >
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone
           </Text>
-          <Text fontWeight="light" fontSize="sm">
+          <Text fontWeight="light" fontSize={['sm', 'md', 'md', 'md', 'md']}>
             ©Trafalgar PTY LTD 2020. All rights reserved
           </Text>
         </GridItem>
-        <GridItem>
-          <Flex
-            flexDirection="column"
-            justify-content="space-between"
-            rowGap="5px"
-            alignItems="center"
-          >
-            <Heading as="h2" size="sm" marginBottom="15px">
-              Company
-            </Heading>
-            <Link color="teal.500" href="#">
-              About
-            </Link>
-            <Link color="teal.500" href="#">
-              Testimonial
-            </Link>
-            <Link color="teal.500" href="#">
-              Find a doctor
-            </Link>
-            <Link color="teal.500" href="#">
-              Apps
-            </Link>
-          </Flex>
-        </GridItem>
-        <GridItem>
-          <Flex
-            flexDirection="column"
-            justify-content="space-between"
-            rowGap="5px"
-            alignItems="center"
-          >
-            <Heading as="h2" size="sm" marginBottom="15px">
-              Region
-            </Heading>
-            <Link color="teal.500" href="#">
-              United States of America
-            </Link>
-            <Link color="teal.500" href="#">
-              United Kingdom
-            </Link>
-            <Link color="teal.500" href="#">
-              India
-            </Link>
-            <Link color="teal.500" href="#">
-              Germany
-            </Link>
-          </Flex>
-        </GridItem>
-        <GridItem>
-          <Flex
-            flexDirection="column"
-            justify-content="space-between"
-            rowGap="5px"
-            alignItems="center"
-          >
-            <Heading as="h2" size="sm" marginBottom="15px">
-              Help
-            </Heading>
-            <Link color="teal.500" href="#">
-              Help Center
-            </Link>
-            <Link color="teal.500" href="#">
-              Contact Support
-            </Link>
-            <Link color="teal.500" href="#">
-              Instructions
-            </Link>
-            <Link color="teal.500" href="#">
-              How it works
-            </Link>
-          </Flex>
-        </GridItem>
+
+        {footer &&
+          footer.map((el, i) => {
+            return (
+              <GridItem marginBottom={['5px', '5px', '0px', '0px', '0px']}>
+                <Flex
+                  flexDirection="column"
+                  justify-content="space-between"
+                  rowGap="5px"
+                  alignItems="center"
+                >
+                  <Heading
+                    as="h2"
+                    size={['sm', 'md', 'md', 'md', 'md']}
+                    marginBottom={['5px', '8px', '15px', '15px', '15px']}
+                    fontFamily="body"
+                  >
+                    {el.key}
+                  </Heading>
+                  {el.value &&
+                    el.value.map((el, i) => {
+                      return (
+                        <Link
+                          color="teal.500"
+                          href="#"
+                          fontSize={['sm', 'md', 'md', 'md', 'md']}
+                        >
+                          {el}
+                        </Link>
+                      );
+                    })}
+                </Flex>
+              </GridItem>
+            );
+          })}
       </Grid>
     </Box>
   );

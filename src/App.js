@@ -12,7 +12,10 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <>
-      <Box my="60px" mx="150px">
+      <Box
+        my={['20px', '30px', '60px', '60px', '60px']}
+        mx={['30px', '40px', '40px', '150px', '150px']}
+      >
         <Navigation />
         <CtaSection />
         <Services />

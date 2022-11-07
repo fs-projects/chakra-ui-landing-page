@@ -10,7 +10,7 @@ import {
   Flex,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import styles from './Services.module.css';
+// import styles from './Services.module.css';
 import { Icon } from '@chakra-ui/react';
 import { data } from '../data';
 
@@ -41,12 +41,13 @@ function Services() {
             Our Services
           </Heading>
         </Flex>
-        <div className={styles.horizontalLine}></div>
+        {/* <div className={styles.horizontalLine}></div> */}
         <Container maxW="6xl">
           <Text
             textAlign="center"
             fontWeight="light"
             fontSize={['sm', 'md', 'md', 'md', 'md']}
+            marginBottom={['10px', '10px', '0px', '0px', '0px']}
           >
             We provide to you the best choiches for you. Adjust it to your
             health needs and make sure your undergo treatment with our highly
@@ -74,7 +75,7 @@ function Services() {
                   pl={['15px', '20px', '40px', '40px', '40px']}
                   py={['10px', '20px', '45px', '45x', '45x']}
                   pr={['10px', '20px', '45px', '45x', '45x']}
-                  borderRadius="20px"
+                  borderRadius={['10px', '15px', '20px', '20px', '20px']}
                   background="#F9F7F7"
                 >
                   <Flex
@@ -128,7 +129,7 @@ function Services() {
         <Button
           colorScheme="teal"
           size={['sm', 'md', 'lg', 'lg', 'lg']}
-          borderRadius="55px"
+          borderRadius={['35px', '40px', '55px', '55px', '55px']}
           variant="outline"
         >
           Learn More
