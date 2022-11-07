@@ -78,7 +78,7 @@ function Footer() {
                         <Link
                           color="teal.500"
                           href="#"
-                          fontSize={['sm', 'md', 'md', 'md', 'md']}
+                          fontSize={['xs', 'md', 'md', 'md', 'md']}
                         >
                           {el}
                         </Link>
