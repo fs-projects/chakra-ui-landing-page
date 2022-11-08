@@ -26,6 +26,7 @@ function CtaSection() {
       justifyContent="space-between"
       flexDirection={['column', 'row', 'row', 'row', 'row']}
       // boxShadow={"-1px 10px 21px 0px rgba(209,209,193,0.72)"}
+      // boxShadow={"-1px 10px 21px 0px rgba(209,209,193,0.72)"}
     >
       <Box width={['100%', '40%', '40%', '40%', '40%']}>
         <Box marginBottom={['20px', '25px', '40px', '45px', '45px']}>
