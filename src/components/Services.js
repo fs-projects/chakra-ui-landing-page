@@ -27,6 +27,8 @@ function Services() {
     <Box
       as="section"
       marginBottom={['100px', '150px', '200px', '200px', '200px']}
+      boxShadow={"-1px 10px 21px 0px rgba(209,209,193,0.72)"}
+      padding={["25px", "25px", "40px", "40px", "40px"]}
     >
       <Box marginBottom={['20px', '25px', '40px', '45px', '45px']}>
         <Flex

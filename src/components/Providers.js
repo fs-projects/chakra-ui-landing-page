@@ -25,6 +25,8 @@ function Providers() {
       flexDirection={['column', 'row', 'row', 'row', 'row']}
       alignItems="center"
       justifyContent="space-between"
+      boxShadow={"-1px 10px 21px 0px rgba(209,209,193,0.72)"}
+      padding={["25px", "25px", "40px", "40px", "40px"]}
     >
       {breakpoint === 'base' && (
         <Heading as="h2" size="md" marginBottom="25px" fontFamily="body">
