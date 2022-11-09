@@ -16,7 +16,13 @@ function Articles() {
   return (
     <Box
       marginBottom={['50px', '60px', '100px', '100px', '100px']}
-      boxShadow={'-1px 10px 21px 0px rgba(209,209,193,0.72)'}
+      boxShadow={[
+        '-1px 5px 10px 0px rgba(209,209,193,0.72)',
+        '-1px 5px 10px 0px rgba(209,209,193,0.72)',
+        '-1px 10px 21px 0px rgba(209,209,193,0.72)',
+        '-1px 10px 21px 0px rgba(209,209,193,0.72)',
+        '-1px 10px 21px 0px rgba(209,209,193,0.72)',
+      ]}
       padding={['25px', '25px', '40px', '40px', '40px']}
     >
       <Box marginBottom="10px" display="flex" justifyContent="center">
