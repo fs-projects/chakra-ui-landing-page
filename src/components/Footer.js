@@ -19,11 +19,11 @@ function Footer() {
           'repeat(1, 1fr)',
           'repeat(2, 1fr)',
           'repeat(3, 1fr)',
-          'repeat(4, 1fr)',
-          'repeat(4, 1fr)',
+          '44% 18.6% 18.6% 18.6%',
+          '44% 18.6% 18.6% 18.6%',
         ]}
         columnGap={['0', '1', '1', '1', '1']}
-        rowGap={['2', '2', '2', '2', '2']}
+        rowGap={['4', '2', '2', '2', '2']}
       >
         <GridItem>
           <Box display="flex" alignItems="center" marginBottom="20px">
