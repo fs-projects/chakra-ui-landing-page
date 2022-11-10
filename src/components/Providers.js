@@ -7,7 +7,7 @@ import {
   Image,
   Text,
   useBreakpointValue,
-  Flex,
+  Divider,
 } from '@chakra-ui/react';
 function Providers() {
   const breakpoint = useBreakpointValue({
@@ -32,7 +32,7 @@ function Providers() {
         '-1px 10px 21px 0px rgba(209,209,193,0.72)',
         '-1px 10px 21px 0px rgba(209,209,193,0.72)',
       ]}
-      padding={["25px", "25px", "40px", "40px", "40px"]}
+      padding={['25px', '25px', '40px', '40px', '40px']}
     >
       {breakpoint === 'base' && (
         <Heading as="h2" size="md" marginBottom="25px" fontFamily="body">

@@ -9,6 +9,7 @@ import {
   Button,
   Flex,
   useBreakpointValue,
+  Divider,
 } from '@chakra-ui/react';
 // import styles from './Services.module.css';
 import { Icon } from '@chakra-ui/react';
@@ -37,19 +38,27 @@ function Services() {
       padding={['25px', '25px', '40px', '40px', '40px']}
     >
       <Box marginBottom={['20px', '25px', '40px', '45px', '45px']}>
-        <Flex
-          marginBottom={['20px', '25px', '40px', '45px', '45px']}
-          justifyContent="center"
-        >
-          <Heading
-            as="h2"
-            size={['md', 'md', 'xl', '2xl', '2xl']}
-            fontFamily="body"
+        <Box position="relative">
+          <Flex
+            marginBottom={['20px', '25px', '40px', '45px', '45px']}
+            justifyContent="center"
           >
-            Our Services
-          </Heading>
-        </Flex>
-        {/* <div className={styles.horizontalLine}></div> */}
+            <Heading
+              as="h2"
+              size={['md', 'md', 'xl', '2xl', '2xl']}
+              fontFamily="body"
+            >
+              Our Services
+            </Heading>
+          </Flex>
+          <Divider
+            borderColor="teal"
+            position="absolute"
+            bottom="-32%"
+            left="30%"
+            width="40%"
+          />
+        </Box>
         <Container maxW="6xl">
           <Text
             textAlign="center"

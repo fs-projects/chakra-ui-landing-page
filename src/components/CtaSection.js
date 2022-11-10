@@ -32,7 +32,7 @@ function CtaSection() {
         '-1px 10px 21px 0px rgba(209,209,193,0.72)',
         '-1px 10px 21px 0px rgba(209,209,193,0.72)',
       ]}
-      padding={["25px", "25px", "40px", "40px", "40px"]}
+      padding={['25px', '25px', '40px', '40px', '40px']}
     >
       <Box width={['100%', '40%', '40%', '40%', '40%']}>
         <Box marginBottom={['20px', '25px', '40px', '45px', '45px']}>
